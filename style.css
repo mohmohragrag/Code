@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  padding: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+input[type="number"] {
+  width: 100px;
+  margin-left: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#results {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
