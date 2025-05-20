@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>حساب وزن الحديد الإنشائي</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>حساب وزن الحديد الإنشائي</h1>
+
+<form id="weightForm">
+  <!-- الأعمدة الرئيسية -->
+  <fieldset>
+    <legend>الأعمدة الرئيسية</legend>
+    <label>طول الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="main_columns_flange1_length" required></label>
+    <label>عرض الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="main_columns_flange1_width" required></label>
+    <label>تخانة الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="main_columns_flange1_thickness" required></label>
+    <label>طول الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="main_columns_flange2_length" required></label>
+    <label>عرض الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="main_columns_flange2_width" required></label>
+    <label>تخانة الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="main_columns_flange2_thickness" required></label>
+    <label>طول الويب (سم): <input type="number" step="0.1" min="0" name="main_columns_web_length" required></label>
+    <label>عرض الويب (سم): <input type="number" step="0.1" min="0" name="main_columns_web_width" required></label>
+    <label>تخانة الويب (سم): <input type="number" step="0.1" min="0" name="main_columns_web_thickness" required></label>
+    <label>العدد: <input type="number" step="1" min="0" name="main_columns_count" required></label>
+  </fieldset>
+
+  <!-- الأعمدة الوسط -->
+  <fieldset>
+    <legend>الأعمدة الوسط</legend>
+    <label>طول الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="middle_columns_flange1_length" required></label>
+    <label>عرض الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="middle_columns_flange1_width" required></label>
+    <label>تخانة الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="middle_columns_flange1_thickness" required></label>
+    <label>طول الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="middle_columns_flange2_length" required></label>
+    <label>عرض الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="middle_columns_flange2_width" required></label>
+    <label>تخانة الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="middle_columns_flange2_thickness" required></label>
+    <label>طول الويب (سم): <input type="number" step="0.1" min="0" name="middle_columns_web_length" required></label>
+    <label>عرض الويب (سم): <input type="number" step="0.1" min="0" name="middle_columns_web_width" required></label>
+    <label>تخانة الويب (سم): <input type="number" step="0.1" min="0" name="middle_columns_web_thickness" required></label>
+    <label>العدد: <input type="number" step="1" min="0" name="middle_columns_count" required></label>
+  </fieldset>
+
+  <!-- الأعمدة الوجهة -->
+  <fieldset>
+    <legend>الأعمدة الوجهة</legend>
+    <label>طول الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="face_columns_flange1_length" required></label>
+    <label>عرض الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="face_columns_flange1_width" required></label>
+    <label>تخانة الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="face_columns_flange1_thickness" required></label>
+    <label>طول الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="face_columns_flange2_length" required></label>
+    <label>عرض الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="face_columns_flange2_width" required></label>
+    <label>تخانة الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="face_columns_flange2_thickness" required></label>
+    <label>طول الويب (سم): <input type="number" step="0.1" min="0" name="face_columns_web_length" required></label>
+    <label>عرض الويب (سم): <input type="number" step="0.1" min="0" name="face_columns_web_width" required></label>
+    <label>تخانة الويب (سم): <input type="number" step="0.1" min="0" name="face_columns_web_thickness" required></label>
+    <label>العدد: <input type="number" step="1" min="0" name="face_columns_count" required></label>
+  </fieldset>
+
+  <!-- الرافترات الطيارة -->
+  <fieldset>
+    <legend>الرافترات الطيارة</legend>
+    <label>طول الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_flange1_length" required></label>
+    <label>عرض الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_flange1_width" required></label>
+    <label>تخانة الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_flange1_thickness" required></label>
+    <label>طول الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_flange2_length" required></label>
+    <label>عرض الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_flange2_width" required></label>
+    <label>تخانة الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_flange2_thickness" required></label>
+    <label>طول الويب (سم): <input type="number" step="0.1" min="0" name="rafters_flying_web_length" required></label>
+    <label>عرض الويب (سم): <input type="number" step="0.1" min="0" name="rafters_flying_web_width" required></label>
+    <label>تخانة الويب (سم): <input type="number" step="0.1" min="0" name="rafters_flying_web_thickness" required></label>
+    <label>العدد: <input type="number" step="1" min="0" name="rafters_flying_count" required></label>
+  </fieldset>
+
+  <!-- الرافترات العدل -->
+  <fieldset>
+    <legend>الرافترات العدل</legend>
+    <label>طول الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="rafters_level_flange1_length" required></label>
+    <label>عرض الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="rafters_level_flange1_width" required></label>
+    <label>تخانة الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="rafters_level_flange1_thickness" required></label>
+    <label>طول الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="rafters_level_flange2_length" required></label>
+    <label>عرض الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="rafters_level_flange2_width" required></label>
+    <label>تخانة الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="rafters_level_flange2_thickness" required></label>
+    <label>طول الويب (سم): <input type="number" step="0.1" min="0" name="rafters_level_web_length" required></label>
+    <label>عرض الويب (سم): <input type="number" step="0.1" min="0" name="rafters_level_web_width" required></label>
+    <label>تخانة الويب (سم): <input type="number" step="0.1" min="0" name="rafters_level_web_thickness" required></label>
+    <label>العدد: <input type="number" step="1" min="0" name="rafters_level_count" required></label>
+  </fieldset>
+
+  <!-- الرافترات الطيارة بعد السلبة -->
+  <fieldset>
+    <legend>الرافترات الطيارة بعد السلبة</legend>
+    <label>طول الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_after_flange1_length" required></label>
+    <label>عرض الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_after_flange1_width" required></label>
+    <label>تخانة الفلانشة 1 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_after_flange1_thickness" required></label>
+    <label>طول الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_after_flange2_length" required></label>
+    <label>عرض الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_after_flange2_width" required></label>
+    <label>تخانة الفلانشة 2 (سم): <input type="number" step="0.1" min="0" name="rafters_flying_after_flange2_thickness" required></label>
+    <label>طول الويب (سم): <input type="number" step="0.1" min="0" name="rafters_flying_after_web_length" required></label>
+    <label>عرض الويب (سم): <input type="number" step="0.1" min="0" name="rafters_flying_after_web_width" required></label>
+    <label>تخانة الويب (سم): <input type="number" step="0.1" min="0" name="rafters_flying_after_web_thickness" required></label>
+    <label>العدد: <input type="number" step="1" min="0" name="rafters_flying_after_count" required></label>
+  </fieldset>
+
+  <button type="submit">احسب الوزن</button>
+</form>
+
+<div id="results"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
